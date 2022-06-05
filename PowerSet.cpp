@@ -32,3 +32,22 @@ int main()
 	}
 
 }
+//for integer
+#include<bits/stdc++.h>
+vector<vector<int>> pwset(vector<int>v)
+{
+    vector<vector<int>> answer;
+    int n=v.size();
+    for(int num=0;num<(1<<n);num++)
+    {
+        vector<int> sub;
+        for(int i=0;i<n;i++)
+        {
+            if(num&(1<<i))
+                sub.push_back(v[i]);
+        }
+        answer.push_back(sub);
+    }
+    sort(answer.begin(),answer.end());
+    return answer;
+}
