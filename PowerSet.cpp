@@ -1,3 +1,4 @@
+//Link https://takeuforward.org/data-structure/power-set-print-all-the-possible-subsequences-of-the-string/
 //Using BIT manupulation
 //For strings
 #include<bits/stdc++.h>
