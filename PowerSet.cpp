@@ -1,6 +1,10 @@
 //Link https://takeuforward.org/data-structure/power-set-print-all-the-possible-subsequences-of-the-string/
+
 //Using BIT manupulation
+
 //For strings
+//TC: O(2^n *n)
+//SC: O(1)
 #include<bits/stdc++.h>
 using namespace std;
 vector<string> AllPossibleStrings(string s) {
@@ -35,6 +39,8 @@ int main()
 
 }
 //for integer
+//TC: O(2^n *n)
+//SC: O(1)
 #include<bits/stdc++.h>
 vector<vector<int>> pwset(vector<int>v)
 {
@@ -63,6 +69,8 @@ vector<vector<int>> pwset(vector<int>v)
 //Vectors need to be passed by refrence
 
 //String
+//TC : O(2^n)
+//SC : O(n)
 #include<bits/stdc++.h>
 using namespace std;
 void solve(int i, string s, string &f) {
@@ -85,6 +93,8 @@ int main() {
 }
 
 //Integers
+//TC : O(2^n * n)
+//SC: O(n)
 #include<bits/stdc++.h>
 using namespace std;
 void powerset(int arr[], vector<int> &ans,int index,int n)
